@@ -1,0 +1,38 @@
+const Class = [];
+function adding(name,age,gender,mobile_no,email,address){
+    var metadata = 
+    {
+        "name" : name,
+        "age" : age,
+        "gender" : gender,
+        "mobile_no" : mobile_no,
+        "email" : email,
+        "address" :address
+    };
+    Class.push(metadata);
+}
+function print()
+{
+    for(let i = 0;i<Class.length;i++)
+    {
+        console.log("\nNumber is : " , i+1);
+        console.log("Studwnt name is : " , Class[i]["name"]);
+        console.log("Age is : " , Class[i]["age"]);
+        console.log("Gender is : " , Class[i]["gender"]);
+        console.log("Mobile Number is : " , Class[i]["mobile_no"]);
+        console.log("email address of student is : " , Class[i]["email"]);
+        console.log("Address is : " , Class[i]["address"]);
+    }
+}
+function count()
+{
+    console.log("\nNumber of Student in class is : " , Class.length);
+}
+adding("GAURAV","19","MALE","7845693210","xyz@hotmail.com","Kharar");
+adding("ANUJ","19","MALE","8147814528","anujyadav@gmail.com","Keval");
+adding("RAGHAV","18","MALE","9574861320","raghavbajaj2718@gmail.com","Karnal");
+adding("HARSH","20","MALE","7741528963","harshksharma@gmail.com","Kanpur");
+adding("PARAG","17","MALE","978541236","tuhihai@gmail.com","Karnal");
+adding("Mayank","16","MALE","8528745632","tuhihai@gmail.com","Kachhwa");
+print();
+count();
